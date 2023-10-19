@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+  
+
+    {% block title %}People{% endblock %}
+    {% block content %}
+    <h1>People</h1>
+    <div id="people-list">
+        {% for users in user %}
+            <div class="user">
+            <a href="{{ user.get_absolute_url }}">
+                
+                <img src="{{ users.profile.photo.url }}">
+            </a>
+            <div class="info">
+            <a href="{{ users.get_absolute_url }}" class="title">
+                {{ users.get_full_name }}
+            </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
