@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^nw0lcc-yu@(6v@iyt^d%rx7w%)70&u+$7+08*u6s^_dstz**p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 if DEBUG:
     import mimetypes
@@ -33,7 +33,7 @@ if DEBUG:
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bookmark.uz']
 
 
 # Application definition
